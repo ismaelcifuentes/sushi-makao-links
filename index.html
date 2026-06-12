@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Sushi MAKAO | Redes y ubicación</title>
+  <title>Sushi MAKAO | Redes, pedidos y rifa</title>
 
   <style>
     body {
@@ -52,6 +52,7 @@
       margin: 0 0 24px;
       font-size: 16px;
       color: #5b3525;
+      line-height: 1.4;
     }
 
     .button {
@@ -69,6 +70,17 @@
     .button:hover {
       transform: scale(1.02);
       opacity: 0.92;
+    }
+
+    .raffle {
+      background: linear-gradient(45deg, #f7c52b, #f59e0b);
+      color: #421b0d;
+      border: 2px solid #421b0d;
+      box-shadow: 0 6px 14px rgba(247, 197, 43, 0.35);
+    }
+
+    .raffle::before {
+      content: "🎟️ ";
     }
 
     .facebook {
@@ -105,29 +117,61 @@
       <img src="logo.png" alt="Logo de Sushi MAKAO" class="logo">
 
       <h1>Sushi MAKAO</h1>
-      <p class="subtitle">Síguenos, escríbenos o encuentra nuestra ubicación</p>
+      <p class="subtitle">
+        Síguenos, escríbenos, compra tu boleto de rifa o encuentra nuestra ubicación
+      </p>
 
-      <a href="https://wa.me/593963519574?text=Hola%2C%20quiero%20comprar%20un%20boleto%20para%20la%20rifa%20por%20causa%20acad%C3%A9mica." class="button raffle" target="_blank">
+      <a 
+        class="button raffle"
+        href="https://wa.me/593963519574?text=Hola%2C%20quiero%20comprar%20un%20boleto%20para%20la%20rifa%20por%20causa%20acad%C3%A9mica."
+        target="_blank"
+        rel="noopener"
+      >
         Comprar boleto de rifa
       </a>
       
-      <a class="button facebook" href="https://web.facebook.com/profile.php?id=61563958467436" target="_blank" rel="noopener">
+      <a 
+        class="button facebook" 
+        href="https://web.facebook.com/profile.php?id=61563958467436" 
+        target="_blank" 
+        rel="noopener"
+      >
         Facebook
       </a>
 
-      <a class="button instagram" href="https://www.instagram.com/makao_foo.d/" target="_blank" rel="noopener">
+      <a 
+        class="button instagram" 
+        href="https://www.instagram.com/makao_foo.d/" 
+        target="_blank" 
+        rel="noopener"
+      >
         Instagram
       </a>
 
-      <a class="button tiktok" href="https://www.tiktok.com/@makao.food" target="_blank" rel="noopener">
+      <a 
+        class="button tiktok" 
+        href="https://www.tiktok.com/@makao.food" 
+        target="_blank" 
+        rel="noopener"
+      >
         TikTok
       </a>
 
-      <a class="button whatsapp" href="https://wa.me/593969009081?text=Hola%20Sushi%20MAKAO%2C%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener">
+      <a 
+        class="button whatsapp" 
+        href="https://wa.me/593969009081?text=Hola%20Sushi%20MAKAO%2C%20quiero%20hacer%20un%20pedido" 
+        target="_blank" 
+        rel="noopener"
+      >
         WhatsApp
       </a>
 
-      <a class="button maps" href="https://maps.app.goo.gl/rrVBQ5oKkc5YKPCL6" target="_blank" rel="noopener">
+      <a 
+        class="button maps" 
+        href="https://maps.app.goo.gl/rrVBQ5oKkc5YKPCL6" 
+        target="_blank" 
+        rel="noopener"
+      >
         Ubicación en Google Maps
       </a>
 
