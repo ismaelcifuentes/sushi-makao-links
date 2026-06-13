@@ -7,6 +7,10 @@
   <title>Sushi MAKAO | Redes, pedidos y rifa</title>
 
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -19,7 +23,7 @@
       min-height: 100vh;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       padding: 28px 16px;
       box-sizing: border-box;
     }
@@ -32,6 +36,7 @@
       padding: 28px 22px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.18);
       border: 4px solid #421b0d;
+      box-sizing: border-box;
     }
 
     .logo {
@@ -103,17 +108,102 @@
       background: #4285f4;
     }
 
+    .terms-button {
+      background: #421b0d;
+      color: #ffffff;
+      border: 2px solid #f7c52b;
+    }
+
+    .terms-button::before {
+      content: "📄 ";
+    }
+
     .footer {
       margin-top: 22px;
       font-size: 13px;
       color: #6b4b3d;
+    }
+
+    .terms-section {
+      margin-top: 34px;
+      padding-top: 24px;
+      border-top: 2px solid #f7c52b;
+      text-align: left;
+      color: #2b1309;
+    }
+
+    .terms-section h2 {
+      text-align: center;
+      color: #421b0d;
+      font-size: 24px;
+      margin: 0 0 8px;
+      line-height: 1.2;
+    }
+
+    .terms-section h3 {
+      text-align: center;
+      color: #421b0d;
+      font-size: 18px;
+      margin: 0 0 22px;
+      line-height: 1.3;
+    }
+
+    .terms-section h4 {
+      color: #421b0d;
+      font-size: 17px;
+      margin: 24px 0 8px;
+      line-height: 1.3;
+    }
+
+    .terms-section p {
+      font-size: 14px;
+      line-height: 1.55;
+      margin: 8px 0;
+    }
+
+    .terms-section ul,
+    .terms-section ol {
+      padding-left: 22px;
+      margin-top: 8px;
+      margin-bottom: 12px;
+    }
+
+    .terms-section li {
+      font-size: 14px;
+      line-height: 1.55;
+      margin-bottom: 6px;
+    }
+
+    .terms-note {
+      background: #fff7d6;
+      border-left: 5px solid #f7c52b;
+      padding: 12px;
+      border-radius: 10px;
+      margin: 14px 0;
+    }
+
+    .back-top {
+      display: block;
+      text-align: center;
+      margin-top: 26px;
+      padding: 12px;
+      border-radius: 14px;
+      background: #f7c52b;
+      color: #421b0d;
+      font-weight: bold;
+      text-decoration: none;
+      border: 2px solid #421b0d;
+    }
+
+    strong {
+      color: #421b0d;
     }
   </style>
 </head>
 
 <body>
   <main class="page">
-    <section class="card">
+    <section class="card" id="inicio">
       <img src="logo.png" alt="Logo de Sushi MAKAO" class="logo">
 
       <h1>Sushi MAKAO</h1>
@@ -175,7 +265,291 @@
         Ubicación en Google Maps
       </a>
 
+      <a class="button terms-button" href="#terminos">
+        Términos y condiciones de la rifa
+      </a>
+
       <p class="footer">Sushi MAKAO Restaurante & Delivery</p>
+
+      <section class="terms-section" id="terminos">
+        <h2>TÉRMINOS Y CONDICIONES</h2>
+        <h3>Rifa por Causa Académica – Sushi MAKAO</h3>
+
+        <p>
+          La presente rifa tiene como finalidad recaudar fondos para apoyar la participación de 
+          <strong>Ismael Cifuentes</strong>, estudiante ecuatoriano, en congresos académicos internacionales. 
+          La rifa cuenta con el apoyo y auspicio de 
+          <strong>Sushi MAKAO Restaurante & Delivery</strong>.
+        </p>
+
+        <p>
+          Al adquirir un boleto, el participante acepta los siguientes términos y condiciones:
+        </p>
+
+        <h4>1. Organizador y auspicio</h4>
+
+        <p>
+          La rifa es organizada con fines de apoyo académico para contribuir a la participación de 
+          <strong>Ismael Cifuentes</strong> en congresos internacionales y cuenta con el auspicio de 
+          <strong>Sushi MAKAO Restaurante & Delivery</strong>, local ubicado en 
+          <strong>Carcelén, Andrés Guillén, N84-90, 170302 Quito, Ecuador</strong>.
+        </p>
+
+        <p>
+          Sushi MAKAO participa como auspiciante y punto de apoyo para la difusión y realización del sorteo. 
+          La finalidad principal de la rifa es recaudar fondos destinados a apoyar la formación académica y 
+          representación internacional de <strong>Ismael Cifuentes</strong>.
+        </p>
+
+        <h4>2. Valor del boleto</h4>
+
+        <p>
+          El valor de cada boleto es de <strong>USD 3,00</strong>.
+        </p>
+
+        <p>
+          Cada boleto adquirido representa una oportunidad de participación en el sorteo. El participante deberá 
+          conservar su número de boleto, ya que este será utilizado para identificar al ganador.
+        </p>
+
+        <h4>3. Premios de la rifa</h4>
+
+        <p>Los premios de la rifa son los siguientes:</p>
+
+        <ol>
+          <li><strong>Mini refrigerador de 2 puertas.</strong></li>
+          <li><strong>Dos visores de realidad virtual (VR).</strong></li>
+          <li><strong>Combos de Sushi MAKAO.</strong></li>
+        </ol>
+
+        <p>
+          Los premios serán entregados únicamente a los boletos que resulten ganadores durante el sorteo, 
+          de acuerdo con el orden y dinámica establecidos por la organización.
+        </p>
+
+        <h4>4. Fecha, lugar y modalidad del sorteo</h4>
+
+        <p>El sorteo se realizará el día:</p>
+
+        <p><strong>Sábado 29 de agosto de 2026</strong></p>
+
+        <p>El sorteo se llevará a cabo de forma <strong>presencial</strong> en las instalaciones de:</p>
+
+        <p>
+          <strong>Sushi MAKAO Restaurante & Delivery</strong><br>
+          <strong>Carcelén, Andrés Guillén, N84-90, 170302 Quito, Ecuador</strong>
+        </p>
+
+        <p>
+          Además, el sorteo será transmitido de forma <strong>virtual</strong> a través de las redes sociales 
+          oficiales de Sushi MAKAO:
+        </p>
+
+        <ul>
+          <li><strong>Facebook:</strong> @MAKAO</li>
+          <li><strong>Instagram:</strong> @makao_foo.d</li>
+          <li><strong>TikTok:</strong> @makao.food</li>
+        </ul>
+
+        <p>
+          La transmisión virtual se realizará con el objetivo de brindar transparencia a los participantes y 
+          permitir que puedan seguir el desarrollo del sorteo en vivo.
+        </p>
+
+        <h4>5. Requisitos para reclamar el premio</h4>
+
+        <p>
+          Para reclamar un premio, el participante deberá cumplir obligatoriamente con las siguientes condiciones:
+        </p>
+
+        <ol>
+          <li>Poseer el boleto ganador correspondiente al sorteo.</li>
+          <li>Presentar el número de boleto ganador o evidencia válida de compra del boleto.</li>
+          <li>
+            Seguir todas las cuentas oficiales de Sushi MAKAO en redes sociales:
+            <ul>
+              <li>Facebook: @MAKAO</li>
+              <li>Instagram: @makao_foo.d</li>
+              <li>TikTok: @makao.food</li>
+            </ul>
+          </li>
+        </ol>
+
+        <p>
+          Solo se entregará el premio al participante cuyo boleto haya resultado ganador y que cumpla con todos 
+          los requisitos establecidos en estos términos y condiciones.
+        </p>
+
+        <p>
+          En caso de que el participante ganador no siga las cuentas oficiales indicadas, la organización podrá 
+          solicitarle que complete este requisito antes de proceder con la entrega del premio.
+        </p>
+
+        <h4>6. Verificación del ganador</h4>
+
+        <p>
+          La organización verificará el número de boleto ganador y podrá solicitar al participante los siguientes datos:
+        </p>
+
+        <ul>
+          <li>Nombre completo.</li>
+          <li>Número de cédula o documento de identidad.</li>
+          <li>Número de teléfono.</li>
+          <li>Ciudad de residencia.</li>
+          <li>Captura o comprobante de seguimiento a las redes sociales oficiales de Sushi MAKAO.</li>
+          <li>Comprobante de compra del boleto, en caso de ser necesario.</li>
+        </ul>
+
+        <p>
+          La entrega del premio se realizará únicamente después de verificar la validez del boleto y el cumplimiento 
+          de los requisitos establecidos.
+        </p>
+
+        <h4>7. Entrega de premios</h4>
+
+        <p>
+          La entrega de los premios será coordinada directamente con los ganadores después del sorteo.
+        </p>
+
+        <p>
+          Los premios podrán ser retirados en el local de <strong>Sushi MAKAO Restaurante & Delivery</strong> o 
+          mediante una modalidad acordada entre la organización y el ganador.
+        </p>
+
+        <p>
+          En caso de que el ganador no pueda retirar personalmente el premio, deberá coordinar previamente con la 
+          organización y presentar la información necesaria para validar su identidad y su boleto ganador.
+        </p>
+
+        <p>
+          Los costos de movilización, retiro o envío del premio, en caso de aplicar, deberán ser coordinados 
+          previamente con la organización.
+        </p>
+
+        <h4>8. Plazo para reclamar el premio</h4>
+
+        <p>
+          El ganador tendrá un plazo máximo de <strong>15 días calendario</strong> a partir de la fecha del sorteo 
+          para reclamar su premio.
+        </p>
+
+        <p>
+          Si el premio no es reclamado dentro de este plazo, la organización podrá disponer del premio conforme 
+          considere pertinente, incluyendo la posibilidad de realizar un nuevo sorteo o asignarlo a otra actividad 
+          relacionada con la causa académica de <strong>Ismael Cifuentes</strong>.
+        </p>
+
+        <h4>9. Responsabilidad sobre los premios</h4>
+
+        <p>
+          Los premios se entregarán en el estado en que fueron anunciados y exhibidos en la promoción de la rifa.
+        </p>
+
+        <p>
+          La organización y Sushi MAKAO Restaurante & Delivery no serán responsables por daños, pérdidas, mal uso, 
+          fallas posteriores, garantías comerciales, incompatibilidades técnicas o cualquier inconveniente que ocurra 
+          después de la entrega del premio al ganador.
+        </p>
+
+        <p>
+          En el caso de productos sujetos a garantía de fabricante o proveedor, el ganador deberá gestionar cualquier 
+          reclamo directamente con el proveedor correspondiente, si aplica.
+        </p>
+
+        <h4>10. Transparencia del sorteo</h4>
+
+        <p>
+          El sorteo se realizará de manera pública, presencial y con transmisión virtual a través de las redes sociales 
+          de Sushi MAKAO.
+        </p>
+
+        <p>
+          La organización se compromete a realizar el sorteo de forma clara y transparente, mostrando el proceso de 
+          selección de los boletos ganadores durante la transmisión en vivo.
+        </p>
+
+        <p>
+          Los resultados podrán ser publicados posteriormente en las redes sociales de Sushi MAKAO o comunicados 
+          directamente a los ganadores.
+        </p>
+
+        <h4>11. Participación válida</h4>
+
+        <p>
+          Solo participarán en el sorteo los boletos que hayan sido vendidos y registrados correctamente antes del 
+          cierre de la venta de boletos.
+        </p>
+
+        <p>
+          No serán válidos boletos alterados, duplicados, ilegibles, falsificados o que no puedan ser verificados por 
+          la organización.
+        </p>
+
+        <p>
+          La organización se reserva el derecho de excluir cualquier boleto o participación que presente irregularidades.
+        </p>
+
+        <h4>12. Uso de imagen y difusión</h4>
+
+        <p>
+          Al participar en la rifa, el ganador autoriza a la organización y a Sushi MAKAO Restaurante & Delivery a 
+          publicar su nombre, fotografía, video o registro de entrega del premio en redes sociales, únicamente con fines 
+          de transparencia, evidencia de entrega y difusión de la actividad.
+        </p>
+
+        <p>
+          En caso de que el ganador no desee aparecer públicamente, deberá comunicarlo previamente a la organización.
+        </p>
+
+        <h4>13. Cambios o modificaciones</h4>
+
+        <p>
+          La organización se reserva el derecho de realizar ajustes razonables a la fecha, modalidad o logística del 
+          sorteo en caso de fuerza mayor, problemas técnicos, situaciones externas o circunstancias que impidan el 
+          desarrollo normal de la actividad.
+        </p>
+
+        <p>
+          Cualquier cambio será informado oportunamente a través de las redes sociales de Sushi MAKAO o los canales 
+          oficiales de comunicación de la rifa.
+        </p>
+
+        <h4>14. Aceptación de términos</h4>
+
+        <p>
+          La compra de un boleto implica la aceptación total de los presentes términos y condiciones.
+        </p>
+
+        <p>
+          El participante declara haber leído, entendido y aceptado las reglas de la rifa, así como los requisitos 
+          necesarios para reclamar un premio en caso de resultar ganador.
+        </p>
+
+        <p>
+          Asimismo, reconoce que la finalidad de la actividad es recaudar fondos para apoyar la participación académica 
+          internacional de <strong>Ismael Cifuentes</strong>.
+        </p>
+
+        <h4>15. Contacto</h4>
+
+        <p>
+          Para consultas sobre la rifa, compra de boletos o entrega de premios, los participantes podrán comunicarse 
+          a través del canal habilitado para la compra de boletos o mediante las redes sociales oficiales de Sushi MAKAO.
+        </p>
+
+        <div class="terms-note">
+          <p>
+            <strong>Sushi MAKAO Restaurante & Delivery</strong><br>
+            <strong>Facebook:</strong> @MAKAO<br>
+            <strong>Instagram:</strong> @makao_foo.d<br>
+            <strong>TikTok:</strong> @makao.food<br>
+            <strong>Dirección:</strong> Carcelén, Andrés Guillén, N84-90, 170302 Quito, Ecuador<br>
+            <strong>WhatsApp (Ismael Cifuentes):</strong> +593 96 351 9574
+          </p>
+        </div>
+
+        <a class="back-top" href="#inicio">Volver arriba</a>
+      </section>
     </section>
   </main>
 </body>
