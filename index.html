@@ -70,6 +70,7 @@
       font-size: 18px;
       font-weight: bold;
       transition: transform 0.15s ease, opacity 0.15s ease;
+      box-sizing: border-box;
     }
 
     .button:hover {
@@ -77,15 +78,77 @@
       opacity: 0.92;
     }
 
-    .raffle {
+    .raffle-summary {
+      list-style: none;
+      cursor: pointer;
+      margin: 13px 0;
+      padding: 16px;
+      border-radius: 16px;
       background: linear-gradient(45deg, #f7c52b, #f59e0b);
       color: #421b0d;
       border: 2px solid #421b0d;
       box-shadow: 0 6px 14px rgba(247, 197, 43, 0.35);
+      font-size: 18px;
+      font-weight: bold;
+      box-sizing: border-box;
     }
 
-    .raffle::before {
-      content: "🎟️ ";
+    .raffle-summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .payment-box {
+      text-align: left;
+      background: #fff7d6;
+      border: 2px solid #f7c52b;
+      border-radius: 18px;
+      padding: 16px;
+      margin: 10px 0 18px;
+      box-sizing: border-box;
+      color: #2b1309;
+    }
+
+    .payment-box h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      color: #421b0d;
+      text-align: center;
+    }
+
+    .payment-box p {
+      margin: 8px 0;
+      font-size: 15px;
+      line-height: 1.45;
+    }
+
+    .payment-data {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 12px;
+      margin: 12px 0;
+      border: 1px solid #e6b91e;
+    }
+
+    .payment-data p {
+      margin: 7px 0;
+      font-size: 14px;
+    }
+
+    .important-note {
+      background: #421b0d;
+      color: #ffffff;
+      border-radius: 14px;
+      padding: 12px;
+      margin-top: 12px;
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .send-proof {
+      background: #25d366;
+      color: #ffffff;
+      text-align: center;
+      margin-top: 14px;
     }
 
     .facebook {
@@ -112,10 +175,6 @@
       background: #421b0d;
       color: #ffffff;
       border: 2px solid #f7c52b;
-    }
-
-    .terms-button::before {
-      content: "📄 ";
     }
 
     .footer {
@@ -211,14 +270,43 @@
         Síguenos, escríbenos, compra tu boleto de rifa o encuentra nuestra ubicación
       </p>
 
-      <a 
-        class="button raffle"
-        href="https://wa.me/593963519574?text=Hola%2C%20quiero%20comprar%20un%20boleto%20para%20la%20rifa%20por%20causa%20acad%C3%A9mica."
-        target="_blank"
-        rel="noopener"
-      >
-        Comprar boleto de rifa
-      </a>
+      <details>
+        <summary class="raffle-summary">
+          🎟️ Comprar boleto de rifa / Datos de pago
+        </summary>
+
+        <div class="payment-box">
+          <h2>Datos para transferencia bancaria</h2>
+
+          <p>
+            Realiza tu transferencia por el valor de tu boleto y envía el comprobante por WhatsApp para registrar tus datos y asignarte tu número de boleto.
+          </p>
+
+          <div class="payment-data">
+            <p><strong>Nombre del titular:</strong> ISMAEL XAVIER CIFUENTES CARVAJAL</p>
+            <p><strong>Cédula:</strong> 1754449419</p>
+            <p><strong>Banco:</strong> Pichincha</p>
+            <p><strong>Tipo de cuenta:</strong> Ahorros</p>
+            <p><strong>Número de cuenta:</strong> 2214394885</p>
+            <p><strong>Correo:</strong> ismaelcifuentes928@gmail.com</p>
+            <p><strong>Celular:</strong> +593 963519574</p>
+          </div>
+
+          <div class="important-note">
+            Por favor, envía el comprobante de transferencia una vez realizado el pago. 
+            Luego se registrarán tus datos y se te enviará una foto o confirmación de tu boleto asignado.
+          </div>
+
+          <a
+            class="button send-proof"
+            href="https://wa.me/593963519574?text=Hola%2C%20ya%20realic%C3%A9%20la%20transferencia%20para%20comprar%20un%20boleto%20de%20la%20rifa%20por%20causa%20acad%C3%A9mica.%20Adjunto%20el%20comprobante%20de%20pago.%20Mis%20datos%20son%3A%0A%0ANombre%20y%20apellido%3A%20%0ACiudad%3A%20%0ATel%C3%A9fono%3A%20%0ACorreo%3A%20%0ACantidad%20de%20boletos%3A%20"
+            target="_blank"
+            rel="noopener"
+          >
+            Enviar comprobante por WhatsApp
+          </a>
+        </div>
+      </details>
       
       <a 
         class="button facebook" 
@@ -266,7 +354,7 @@
       </a>
 
       <a class="button terms-button" href="#terminos">
-        Términos y condiciones de la rifa
+        📄 Términos y condiciones de la rifa
       </a>
 
       <p class="footer">Sushi MAKAO Restaurante & Delivery</p>
@@ -292,7 +380,7 @@
           La rifa es organizada con fines de apoyo académico para contribuir a la participación de 
           <strong>Ismael Cifuentes</strong> en congresos internacionales y cuenta con el auspicio de 
           <strong>Sushi MAKAO Restaurante & Delivery</strong>, local ubicado en 
-          <strong>Carcelén, Andrés Guillén, N84-81, 170302 Quito, Ecuador</strong>.
+          <strong>Carcelén, Andrés Guillén, N84-90, 170302 Quito, Ecuador</strong>.
         </p>
 
         <p>
@@ -543,7 +631,7 @@
             <strong>Facebook:</strong> @MAKAO<br>
             <strong>Instagram:</strong> @makao_foo.d<br>
             <strong>TikTok:</strong> @makao.food<br>
-            <strong>Dirección:</strong> Carcelén, Andrés Guillén, N84-81, 170302 Quito, Ecuador<br>
+            <strong>Dirección:</strong> Carcelén, Andrés Guillén, N84-90, 170302 Quito, Ecuador<br>
             <strong>WhatsApp (Ismael Cifuentes):</strong> +593 96 351 9574
           </p>
         </div>
